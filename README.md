@@ -1,7 +1,7 @@
 
 ## SENAI-SP - UC9(SA3) - Atividade do encontro online 1
 
-Consiste na criação de uma **nova versão** de site *Game Mania* para o **Framework angular, porém ,  desta vez, usando a biblioteca do Angular Material**. As páginas e alguns trechos de marcação HTML, como headers (cabeçalhos) e footers (rodapés) do site foram separados em componentes para melhor reuso. Foram criadas algumas páginas tais como : login, produtos e montagem de pc, além da página home.
+Consiste na criação de uma **nova versão** de site *Game Mania* para o **Framework Angular, porém ,  desta vez, usando a biblioteca do Angular Material**. As páginas e alguns trechos de marcação HTML, como headers (cabeçalhos) e footers (rodapés) do site foram separados em componentes para melhor reuso. Foram criadas algumas páginas tais como : login, produtos e montagem de pc, além da página home.
 
 
 ## GameMania (Angular with Material)
