@@ -1,0 +1,66 @@
+.destaques {
+    padding:  30px;
+    height: 100%;
+}
+
+.destaques h2{
+    font-size: 30px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+.destaques-box{
+    background-color: darkseagreen;
+    font-size: 30px;
+}
+
+.produtos{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #A4DBC8;
+}
+
+.produto{
+   max-width: 280px;
+   height: 100%;
+   cursor: pointer;
+   flex: 1 1 280px;
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   color: #000000;
+}
+
+.produto img{
+    width: 150px;
+    height: 150px;
+}
+
+.produto .nome{
+    font-size: 14px;
+}
+
+.produto .preco{
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+mat-card-actions button{
+    width: 100%;
+    padding: 0px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: red;
+    color: #FFFFFF;
+    border: 0;
+}
+
+mat-card-actions button:hover{
+    background-color: crimson;
+}

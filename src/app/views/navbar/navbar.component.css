@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1e88e5;
+}
+
+p{
+    margin: 0;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+ }
+
+ .logo{
+    margin-right: 30px;
+ }
+
+ .search{
+     width: 300px;
+     height: 30px;
+     padding: 10px;
+     font-size: 16px;
+     background-color: #FFFFFF;
+     border: 0;
+ }
+
+ .store-link{
+     text-decoration: none;
+     color: #FFFFFF;
+ }
+
+.store{
+    font-size: 40px;
+}
+
+.access-area{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.links{
+    display: flex;
+    width: 500px;
+}
+
+nav{
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0px 10px;
+    font-size: 16px;
+}
+
+.links a:hover, nav a:hover{
+  color: lime;
+}
+
+
+.login-icon{
+    margin: 0px 10px;
+}
+
+
+button{
+    cursor: pointer;
+    background-color: #1e88e5;
+    border: 0;
+    color: #FFFFFF;
+}
+
+
+
+button:hover{
+    color: lime;
+}
+
+.menubar-icon{
+    display: none;
+}
+
+
+@media screen  and (max-width: 800px){
+
+    .logo{
+        font-size: 24px;
+    }
+
+    .mat-toolbar-row{
+        position: relative;
+    }
+
+    nav{
+        display: none;
+    }
+
+    /* nav{ 
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: -500px;
+        width: 240px;
+        background-color: #3f51b5;
+        z-index: 1;
+        margin: 0px 30px;
+    } */
+
+    .active-nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 240px;
+        background-color: #3f51b5;
+        z-index: 1;
+        margin: 0px 30px;
+    }
+
+    nav a{
+        color: #FFFFFF;
+        padding: 10px;
+    }
+
+    .menubar-icon{
+        display: flex;
+    }
+
+    .links{
+        justify-content: flex-end;
+    }
+
+    .store{
+        font-size: 30px;
+    }
+
+    .subtitle{
+        font-size: 16px;
+    }
+}
+
+@media screen  and (max-width: 630px){
+
+    .logo{
+        font-size: 16px;
+    }
+
+    .store{
+        font-size: 18px;
+    }
+
+    .search-icon, .search{
+        display: none;
+    }
+}
+
+@media screen  and (max-width: 350px){
+  .login-icon{
+      margin: 0px 3px;
+  }
+
+}
+
+
+@media screen  and (max-width: 300px){
+    .links button{
+        display: none;
+    }
+  }

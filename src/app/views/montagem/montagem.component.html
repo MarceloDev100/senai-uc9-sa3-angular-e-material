@@ -1,0 +1,16 @@
+<span class="montagem"><h2>Monte seu PC !</h2></span>
+<mat-card *ngFor="let peca of pecas" class="cartao">
+    <mat-card-content class="conteudo">
+        <h2 class="titulo">
+            {{ peca }}
+        </h2>
+        <div class="selecao">
+            <p>Selecione o componente</p>
+            <button mat-flat-button color="primary">Selecione</button>
+        </div>
+    </mat-card-content>
+</mat-card>
+
+<div class="finalizar">
+    <button mat-flat-button color="primary">Finalizar</button>
+</div>

@@ -1,0 +1,273 @@
+/* ***************   BANNER  ********************* */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner-box{
+    height: 380px;
+}
+
+
+.banner .img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    background-image: url(/assets/img/foto1.jfif);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    color: #1e88e5;
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.7);
+    filter: brightness(100%);
+}
+
+.banner .img span{
+    max-width: 200px;
+    max-height: 200px;
+    line-height: 30px;
+    color: #1e88e5;
+    background-color: white;
+    margin: 100px;
+    opacity: 1;
+    filter: none;
+    z-index: 1;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    box-shadow: 2px 1px 1px rgba(0,0,0,0.7);
+    border-radius: 5%;
+  
+}
+
+
+.banner img{
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+}
+
+/* TODO */
+.destaques-box{
+    background-color: #b7d5ac;
+    margin: 20px 0px;
+}
+
+.destaques {
+    padding:  30px;
+    height: 100%;
+}
+
+.destaques h2{
+    font-size: 30px;
+    color: darkslategrey;
+    margin: 0;
+}
+
+.produtos{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.produto{
+   max-width: 280px;
+   height: 100%;
+   cursor: pointer;
+   flex: 1 1 280px;
+   margin: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   color: #000000;
+}
+
+.produto img{
+    width: 150px;
+    height: 150px;
+}
+
+.produto .nome{
+    font-size: 14px;
+}
+
+.produto .preco{
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+mat-card-actions button{
+    width: 100%;
+    padding: 0px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: red;
+    color: #FFFFFF;
+    border: 0;
+}
+
+mat-card-actions button:hover{
+    background-color: crimson;
+}
+
+.novidades-box{
+    background-color: #dbead5;
+}
+
+.mais{
+    display: flex;
+    justify-content: center;
+}
+
+.mais a{
+    padding: 5px;
+    margin: 80px 0px;
+    width: 100px;
+}
+
+.formulario-box{
+    background-color: #dbead5;
+    margin: -20px 0px;
+}
+
+.formulario{
+  padding: 20px;
+}
+
+.formulario h2{
+    font-size: 30px;
+    color:  darkslategrey;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 40px auto;
+    position: relative;
+    max-width: 700px;
+}
+
+mat-form-field{
+    background-color: #FFFFFF;
+    padding: 10px;
+    font-size: 16px;
+    width: 700px;
+}
+
+.enviar{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 700px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.enviar button{
+    width: 200px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 766px){
+    
+    .produtos{
+        padding: 0px;
+    }
+
+    .destaques h2{
+        font-size: 16px;  
+    }
+    
+    .formulario h2{
+       font-size: 18px;
+    }
+
+    .form, mat-form-field{
+        max-width: 500px;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    .formulario h2{
+        font-size: 16px;
+     }
+ 
+     .form, mat-form-field{
+         max-width: 300px;
+     }
+ 
+}
+
+@media screen and (max-width: 500px){
+    
+    .banner{
+        max-height: 350px;
+    }
+   
+    .formulario{
+        padding: 15px;
+    }
+
+    .form{
+        position: sticky;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form,  mat-form-field{
+        max-width: 250px;
+    }
+
+}
+
+
+@media screen and (max-width: 350px){
+
+    .banner .img{
+        justify-content: center;
+    }
+
+    .formulario{
+        padding: 35px;
+        margin: 0px 10px;
+    }
+
+    .form{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .form,  mat-form-field{
+        max-width: 250px;
+    }
+
+    .enviar button{
+        width: 150px;
+    }
+
+    mat-form-field{
+        padding: 8px;
+    }
+
+}
+
+

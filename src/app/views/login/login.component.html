@@ -1,0 +1,31 @@
+<div class="login-area center">
+    <h1>
+        <span class="material-icons">
+            person
+        </span>
+        <span class="title">Login do cliente</span>
+    </h1>
+    
+    <form class="example-form" #userForm="ngForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Nome</mat-label>
+          <input matInput placeholder="Nome" name="usuario" [(ngModel)]="usuario.nome">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Senha</mat-label>
+          <input type="password" matInput placeholder="Senha" name="senha"  [(ngModel)]="usuario.senha">
+        </mat-form-field>
+
+        <div class="button-row">
+            <button type="submit" mat-flat-button href="" target="_blank">Continuar</button>
+          </div>
+      </form>
+      
+    <p class="register-link">
+        <span>Não tem cadastro?&nbsp;</span>
+        <a href="#">Cadastre-se</a>
+    </p>
+
+    <p class="policy">Ao continuar com o acesso, você concorda com a nossa <a href="">política de privacidade</a> </p>
+</div>
